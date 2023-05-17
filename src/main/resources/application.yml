@@ -1,0 +1,27 @@
+google:
+  service:
+    account:
+      key: classpath:springboot-project-386414-26546e247f33.json
+  application-name: Google Drive API Adapter
+  songs-folder-id: 1eMNKkdSkBSvXaZdVXcPy_48Z_V7KFoqf
+  played-songs-filename: "Index - Cantari cantate"
+
+webhook:
+  channel:
+    address: http://localhost:8080
+    id: songs-channel-id
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:filesDb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings.trace: false
+      settings.web-allow-others: false
